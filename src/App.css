@@ -11,13 +11,16 @@ img{
 .ContactsList{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 20px;
   width: 100%;
 }
 .Contact{
-width: 20%;
-margin: 0 auto;
+width: 15%;
+display: flex;
+flex-direction: column;
 text-align: center;
+margin: 24px;
 }
 p{
   text-align: start;

@@ -1,12 +1,12 @@
 import React from "react";
 
-const ContactsCard = () => {
-  return (
+const ContactsCard = (props) => {
+    return (
     <div className="Contact">
-      <img src="https://media.istockphoto.com/photos/domestic-blue-point-ragdoll-cat-portrait-picture-id139904084" alt="" />
-      <h3>Coco Zreika</h3>
-      <p>Phone: +61 483 847 499</p>
-      <p>Email: cocozreika@moew.com</p>
+      <img src={props.imgURL} alt="" />
+      <h3>{props.name}</h3>
+      <p>{props.phone}</p>
+      <p>{props.email}</p>
     </div>
   );
 };
