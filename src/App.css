@@ -5,3 +5,20 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+img{
+  width: 100%;
+}
+.ContactsList{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+}
+.Contact{
+width: 20%;
+margin: 0 auto;
+text-align: center;
+}
+p{
+  text-align: start;
+}
