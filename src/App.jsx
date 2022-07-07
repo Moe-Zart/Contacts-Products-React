@@ -1,6 +1,17 @@
 import "./App.css";
 import ContactsCard from "./components/ContactsCard";
+import Products from "./components/Products";
+import ProductData from "./components/ProductData";
+
 function App() {
+  const productComponents = ProductData.map((product) => (
+    <Products
+      key={product.id}
+      productName={product.name}
+      productPrice={product.price}
+      productDescription={product.description}
+    />
+  ));
   return (
     <div className="ContactsList">
       <ContactsCard
@@ -24,9 +35,10 @@ function App() {
       <ContactsCard
         name="mask cat"
         phone="+61 392 013 392"
-        imgURL='https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop'
+        imgURL="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
         email="maskcat@moew.com"
       />
+      <div className="products-list">{productComponents}</div>
     </div>
   );
 }
